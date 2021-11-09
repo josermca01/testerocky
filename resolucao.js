@@ -68,5 +68,55 @@ fs.writeFileSync('database.json', data);
 
 //#region 2. Validação do banco de dados corrigido 
 
+//arrays utilizados para ordenção e soma de valores por categoria
+let arrayNovosProdutos = []
+let arrayCategorias = []
+//função para ordenar o array por categoria
+function ordenaCategoriaPorNome(a, b) {
+    if (a.category > b.category)
+        return 1
+    if (a.category < b.category)
+        return -1
+    return 0
+}
+
+function ordenaProdutos(produtos) {
+    let novosProdutos = JSON.parse(JSON.stringify(produtos))
+    //ordenando por categorias
+    //utiliaz-se a função sort para ordenação por categoria
+    novosProdutos.sort(ordenaCategoriaPorNome)
+
+    //ordenando por id
+    //lógica utilizada para ordenação de produtos pelo id
+    //primeiro verifica todas as categorias existentes e adiciona em um array de arrays os produtos de mesma categoria 
+    novosProdutos.forEach(novoProduto => {
+        const index = arrayCategorias.indexOf(novoProduto.category)
+        if (index === -1) {
+            arrayCategorias.push(novoProduto.category);
+            arrayNovosProdutos.push([novoProduto])
+        }
+        else {
+            arrayNovosProdutos[index].push(novoProduto)
+        }
+    });
+    //com o array de arrays pronto, começa o processo de ordenação de id
+    //verifica cada array dentro do array e ordena o mesmo pelo id, atraves da função sort
+    arrayNovosProdutos = arrayNovosProdutos.map(produtosPorCategoria => {
+        produtosPorCategoria.sort((a, b) => a.id - b.id)
+        return produtosPorCategoria
+    })
+    //com o array de arrays ordenado realiza-se a inserção dos valores para um outro array, tendo assim o valor de retorno no mesmo molde do valor de entrada
+    let arrayOrdenado = []
+    arrayNovosProdutos.forEach(produtosPorCategoria => {
+        produtosPorCategoria.forEach(produto => {
+            arrayOrdenado.push(produto)            
+        });        
+    });
+
+    return arrayOrdenado
+}
+
+
+console.log(ordenaProdutos(database))
 
 //#endregion
