@@ -1,10 +1,17 @@
 [
     {
-        "id": 1911864,
-        "name": "Mouse Gamer Predator cestus 510 Fox Preto",
-        "price": 699,
-        "category": "Acessórios",
-        "quantity": 0
+        "id": 5677240,
+        "name": "Conjunto de Panelas antiaderentes com 05 Peças Paris",
+        "quantity": 21,
+        "price": 192.84,
+        "category": "Panelas"
+    },
+    {
+        "id": 9628920,
+        "name": "Lava & Seca 10,2 Kg Samsung Eco bubble branca com 09 Programas de Lavagem",
+        "quantity": 57,
+        "price": 3719.7,
+        "category": "Eletrodomésticos"
     },
     {
         "id": 1316334,
@@ -28,11 +35,18 @@
         "category": "Eletrodomésticos"
     },
     {
-        "id": 9628920,
-        "name": "Lava & Seca 10,2 Kg Samsung Eco bubble branca com 09 Programas de Lavagem",
-        "quantity": 57,
-        "price": 3719.7,
-        "category": "Eletrodomésticos"
+        "id": 8875900,
+        "name": "Smart TV 4K Sony LED 65” 4K X-Reality Pro, UpScalling, Motionflow XR 240 e Wi-F",
+        "quantity": 0,
+        "price": 5799.42,
+        "category": "Eletrônicos"
+    },
+    {
+        "id": 9746439,
+        "name": "Home Theater LG com blu-ray 3D, 5.1 canais e 1000W",
+        "quantity": 80,
+        "price": 2199,
+        "category": "Eletrônicos"
     },
     {
         "id": 2162952,
@@ -49,24 +63,10 @@
         "category": "Eletrônicos"
     },
     {
-        "id": 8875900,
-        "name": "Smart TV 4K Sony LED 65” 4K X-Reality Pro, UpScalling, Motionflow XR 240 e Wi-F",
-        "quantity": 0,
-        "price": 5799.42,
-        "category": "Eletrônicos"
-    },
-    {
-        "id": 9746439,
-        "name": "Home Theater LG com blu-ray 3D, 5.1 canais e 1000W",
-        "quantity": 80,
-        "price": 2199,
-        "category": "Eletrônicos"
-    },
-    {
-        "id": 5677240,
-        "name": "Conjunto de Panelas antiaderentes com 05 Peças Paris",
-        "quantity": 21,
-        "price": 192.84,
-        "category": "Panelas"
+        "id": 1911864,
+        "name": "Mouse Gamer Predator cestus 510 Fox Preto",
+        "price": 699,
+        "category": "Acessórios",
+        "quantity": 0
     }
 ]

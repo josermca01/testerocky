@@ -13,15 +13,6 @@ function verifica_letra(letra) {
         case "ß": return "b"
         default: return letra
     }
-    /* if (letra === "æ")
-        letra = "a"
-    if (letra === "ø")
-        letra = "o"
-    if (letra === "¢")
-        letra = "c"
-    if (letra === "ß")
-        letra = "b" */
-    //return letra
 }
 
 function corrige_nome(entrada) {
@@ -64,7 +55,7 @@ console.log(database)
 //Para gerar um arquivo JSON, utilizei do link abaixo
 // https://stackabuse.com/reading-and-writing-json-files-with-node-js/
 let data = JSON.stringify(database);
-fs.writeFileSync('database.json', data);
+fs.writeFileSync('saida.json', data);
 
 //#endregion
 
